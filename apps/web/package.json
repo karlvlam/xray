@@ -36,6 +36,7 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "@bonfida/spl-name-service": "^0.1.67",
         "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
         "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
         "@helius-labs/xray": "*",
