@@ -27,6 +27,7 @@
         {account}
         link={$page.url.href}
     />
+    <div>{$page.url.pathname}</div>
 
     <div>
         <div
@@ -38,7 +39,7 @@
                     class="tab tab-bordered"
                     on:click={() =>
                         (window.location.href = `/account/${$page.params.account}`)}
-                    class:tab-active={!$page.url.pathname.endsWith("/tokens")}
+                    class:tab-active={$page.url.pathname.match(/^\/account\/[A-Za-z1-9]{44}$/)}
                     >Transactions</button
                 >
                 <button
