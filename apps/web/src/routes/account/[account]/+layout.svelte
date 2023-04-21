@@ -27,7 +27,6 @@
         {account}
         link={$page.url.href}
     />
-    <div>{$page.url.pathname}</div>
 
     <div>
         <div
